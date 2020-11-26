@@ -1,0 +1,15 @@
+{
+ filter: {
+  $and: [
+   {
+    house_rules: RegExp('no smok', i)
+   },
+   {
+    house_rules: RegExp('no part[y|ies]', i)
+   }
+  ]
+ },
+ project: {
+  house_rules: 1
+ }
+}

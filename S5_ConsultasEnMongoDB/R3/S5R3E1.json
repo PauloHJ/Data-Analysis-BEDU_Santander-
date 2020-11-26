@@ -1,0 +1,9 @@
+[{
+    $match: {
+        amenities: {
+            $in: ["Wifi", "Internet", "/Ethernet/i"]
+        }
+    }
+}, {
+    $count: 'Publicaciones con WiFi/Ethernet'
+}]
